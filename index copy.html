@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +10,6 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">        
     <title>Document</title>
 </head>
-<div class="container">
-<div class="main">
 <body>
 
 <!-- NAV BAR -->
@@ -31,7 +27,7 @@
               <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#mywork">My Work</a>
@@ -65,8 +61,8 @@
         <div class="description">
             <!-- <h2>I am an engineer and an artist, with a love for drawing, and coffee</h2> -->
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugiat voluptatem dolorem nostrum quaerat quidem tenetur voluptate modi eaque doloremque, ratione, deserunt cumque velit blanditiis? Voluptatem quis nemo inventore? Dignissimos.</h2>
-            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum repellendus totam voluptates libero quam animi cupiditate eligendi eos id nobis, quasi molestias quod fugiat! Consequatur atque aut praesentium iste minus!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum repellendus totam voluptates libero quam animi cupiditate eligendi eos id nobis, quasi molestias quod fugiat! Consequatur atque aut praesentium iste minus!</p> -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum repellendus totam voluptates libero quam animi cupiditate eligendi eos id nobis, quasi molestias quod fugiat! Consequatur atque aut praesentium iste minus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum repellendus totam voluptates libero quam animi cupiditate eligendi eos id nobis, quasi molestias quod fugiat! Consequatur atque aut praesentium iste minus!</p>
 
         </div>
         
@@ -127,13 +123,85 @@
         });
     </script>
 
-</div>
+
+
+<!-- CONTACT 
+<section class="contact" id="contact">
+    <h2 class="contact_h">Contact Me</h2>
+    <p class="contact_p">lets get in touch</p>
+<form id="contact-form" method="post" action="contact.php" role="form" class="form">
+
+    <div class="messages"></div>
+
+    <div class="controls">
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label for="form_name" style="font-size: 1.5rem;">First name </label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="" required="required" data-error="Firstname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <label for="form_lastname" style="font-size: 1.5rem;"style="font-size: 1.5rem;">Last name </label>
+                    <input id="form_lastname" type="text" name="lastname" class="form-control" placeholder="" required="required" data-error="Lastname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="form-group">
+                    <label for="form_email" style="font-size: 1.5rem;">Email </label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_need">Please specify your need *</label>
+                    <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                        <option value=""></option>
+                        <option value="Request quotation">Request quotation</option>
+                        <option value="Request order status">Request order status</option>
+                        <option value="Request copy of an invoice">Request copy of an invoice</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div> 
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_message" style="font-size: 1.5rem;">Message </label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <input type="submit" class="submit-btn btn btn-success btn-send" style="background-color: rgb(33,37,41); padding: 10px 15px; border: #8E9092; font-size: 1.3rem;" value="Send message">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-muted">
+                    
+            </div>
+        </div>
+    </div>
+
+</form>
+</section>
+https://bootstrapious.com/p/how-to-build-a-working-bootstrap-contact-form -->
+
 
 <!-- footer -->
-<div class="footer"></div>
 <footer> </footer>
 
-</div>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

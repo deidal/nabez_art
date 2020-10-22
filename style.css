@@ -7,7 +7,7 @@
 }
 
 
-html{
+/* html{
     border: 0; 
     margin: 0; 
     box-sizing: border-box;
@@ -16,9 +16,35 @@ html{
 
 body{
     padding: 0;
-    margin: 0 50px 0 50px;
+    /* margin: 0 50px 0 50px; */
     background-color: #FAFAFA;
+} */
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%; 
+    background-color: #FAFAFA;
+   
 }
+
+.container{
+    height: 100%;
+    position: relative;
+}
+
+main{
+    padding-bottom: 60px;
+}
+
+/* .footer{
+    position: absolute;
+    bottom:0; 
+    width: 100%; 
+    height: 60px;   
+    background-color:blue;
+} */
 
 
 a{
@@ -28,10 +54,10 @@ a{
     /* justify-content: end; */
 }
 
-section{
+/* section{
     padding: 3.9rem ;
     overflow: hidden;
-}
+} */
 
 
 .navbar{
@@ -69,7 +95,7 @@ section{
     flex: auto;
     justify-content: center;
     /* position: relative; */
-    padding-top: 10vh;
+    padding-top: 5vh;
 }
 
 .art{
@@ -81,36 +107,59 @@ section{
 }
 
 .art:hover{
-    box-shadow: 5px 5px 15px black;
-    transition: 1s;
+    /* box-shadow: 5px 5px 15px black; */
+    transition: .8s;
     cursor: pointer;
     /* opacity: 70% ; */
+    filter: opacity(.5);
 }
 
 
 .about{
     width: 100%;
-    height: 90vh;
+    height:60vh;
     font-family: var(--secondary-font);
     color: var(--dark-green);
     display: inline-block;
+    margin-bottom: 100px;
+    font-size: 2rem;
+    margin-top: 8rem;
     /* margin-left: 150px; */
 }
 
-.name{
-    display: inline-block;
-    width: 50vw;
-}
-.about-title{
-    /* font-size: 2.5em; */
-    padding: 5rem;
-    margin-bottom: 50px;
+
+p{
+    margin-top: 100px;
 }
 
+
+.name{
+    display: inline-block;
+    width: 30vw;
+}
+/* .about-title{
+    width: 100%;
+    height:20vh;
+    font-family: var(--secondary-font);
+    color: var(--dark-green);
+    display: inline-block;
+    margin-bottom: 0;
+    font-size: .8em;
+    /* font-size: 2.5em; */
+    /* padding: 5rem; */
+    /* margin-bottom: 50px; 
+} */
+
+
+
+.about-title{
+    margin: 0px 100px 0px 100px;
+    font-size: 6rem;
+}
 
 .description{
     display: inline-block;
-    width: 30vw;
+    /* width: 50vw; */
     padding-left: 10vw;
     /* font-size: 1.5em; */
 }
@@ -122,8 +171,7 @@ section{
 }
 
 
-
-.form{
+#gform{
     /* height: 50vh; */
     padding-top: 100px;
     padding: 30px;
@@ -134,30 +182,68 @@ section{
     margin-top: 50px;
 }
 
+#sent{
+    font-size: 2rem;
+    transition: 2s;
+}
 
+.icon-envelope{
+    font-size: 2rem;
+    transition: 2s;
+    /* margin: 50px;
+    padding: 50px; */
+}
 
-.contact{
+#gform{
     font-family: var(--secondary-font);
-    font-size: 3rem;
-    width: 50vw;
-    margin: auto;
+    font-size: 1.5rem;
+    width: 70vw;
+    margin: 150px;
+    padding: 15px;
     margin-top: 10vh;
+    text-align: center;
+    border-radius: 15px ;
 }
 
-.contact_h{
-    font-size: 3rem;
+.contact-me{
+    padding-top: .8em;
+    padding-bottom: .8em;
+    font-size: 3.2rem;
 }
+
+input{
+    border: none;
+    background-color: #AFAFAF;
+    border-bottom: 1px solid #2A3A2D;
+    margin-bottom: .8em;
+    }
 
 .contact_p{
     font-size: 1.5rem;
     margin-left: 1.5vw;
 }
 
+.submit{
+    background-color: #2A3A2D;
+    margin: 1em;
+    border-radius: 15px ;
+    padding: .5em;
 
-.submit-btn:hover{
+}
+.submit:hover{
     box-shadow: 5px 5px black;
     transition: .5s;
 }
+
+/* footer{
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    right:0; 
+    bottom:0;
+    height: 5vw;
+    background-color: #2A3A2D; */
 
 /* media queries */
 
@@ -168,7 +254,7 @@ section{
 }
 
 
-@media (max-width: 750px), (max-height: 1024px) {
+/* @media (max-width: 750px), (max-height: 1024px) {
     .image-wrapper{
         display: flex;
         flex-wrap: wrap;
@@ -223,17 +309,11 @@ section{
     }
 }
 
-footer{
-    margin: 0;
-    padding: 0;
-    left: 0;
-    right:0; 
-    height: 5vw;
-    background-color: #2A3A2D;
-}
+
+} */
 
 
-@media (max-width: 768px), (max-height: 10224px) {
+/* @media (max-width: 768px), (max-height: 10224px) {
  
     .navbar{
         width: 100%;
@@ -280,4 +360,4 @@ footer{
         /* position: relative; */
     }
 
-} 
+}  */

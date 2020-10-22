@@ -1,7 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +10,6 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">        
     <title>Document</title>
 </head>
-<div class="container">
-<div class="main">
 <body>
 
 <!-- NAV BAR -->
@@ -21,20 +17,20 @@
 
 <!-- #2A3A2D -->
     <nav class="navbar navbar-expand-lg navbar-light " style="background-color:#FAFAFA ; padding-top: 40px; padding-bottom: 30px" >
-        <a class="navbar-brand" href="#"><img src="https://svgshare.com/i/Qmn.svg" alt="" class="signature" style="height: 200px; padding-top: 20px "></a>
+        <a class="navbar-brand" href="index.html"><img src="https://svgshare.com/i/Qmn.svg" alt="" class="signature" style="height: 200px; padding-top: 20px "></a>
         <button class="navbar-toggler" style="color: #E6DFCA" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon" ></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#mywork">My Work</a>
+              <a class="nav-link" href="work.html">My Work</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
@@ -65,75 +61,19 @@
         <div class="description">
             <!-- <h2>I am an engineer and an artist, with a love for drawing, and coffee</h2> -->
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia fugiat voluptatem dolorem nostrum quaerat quidem tenetur voluptate modi eaque doloremque, ratione, deserunt cumque velit blanditiis? Voluptatem quis nemo inventore? Dignissimos.</h2>
-            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum repellendus totam voluptates libero quam animi cupiditate eligendi eos id nobis, quasi molestias quod fugiat! Consequatur atque aut praesentium iste minus!</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum repellendus totam voluptates libero quam animi cupiditate eligendi eos id nobis, quasi molestias quod fugiat! Consequatur atque aut praesentium iste minus!</p> -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum repellendus totam voluptates libero quam animi cupiditate eligendi eos id nobis, quasi molestias quod fugiat! Consequatur atque aut praesentium iste minus!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum repellendus totam voluptates libero quam animi cupiditate eligendi eos id nobis, quasi molestias quod fugiat! Consequatur atque aut praesentium iste minus!</p>
 
         </div>
         
     </section>
 
 
-<!-- MY WORK -->
-    <div class="image-wrapper" id="mywork">
-        <img class="art" src="/nabezart/nabezart1.png" alt="first">
-        <img class="art" src="/nabezart/nabezart2.png" alt="first">
-        <img class="art" src="/nabezart/nabezart3.png" alt="first">
-        <img class="art" src="/nabezart/nabezart4.png" alt="first">
-        <img class="art" src="/nabezart/nabezart5.png" alt="first">
-        <img class="art" src="/nabezart/nabezart6.png" alt="first">
-        <img class="art" src="/nabezart/nabezart7.png" alt="first">
-        <img class="art" src="/nabezart/nabezart8.png" alt="first">
-        <img class="art" src="/nabezart/nabezart9.png" alt="first">
-        <img class="art" src="/nabezart/nabezart10.png" alt="first">
-        <img class="art" src="/nabezart/nabezart11.png" alt="first">
-        <img class="art" src="/nabezart/nabezart12.png" alt="first">
-        <img class="art" src="/nabezart/nabezart13.png" alt="first">
-    </div>
-
-    <form name="gform" id="gform" enctype="text/plain" 
-    action="https://docs.google.com/forms/d/e/1FAIpQLSfNtOT1-3LxDpOb-ApZirsBevpYFW672Y3jeKnlDsmizoVuDQ/formResponse?" 
-    target="hidden_iframe" onsubmit="submitted=true;">
-        <h2 class="contact-me">Contact Me</h2>
-       <h3>Email</h2> <br>
-        <input type="email" name ="entry.1683424184" id="entry.1683424184"><br>
-        <h3>First name</h3><br>
-        <input type="text" name="entry.1242496308" id="entry.1242496308"><br>
-        <h3>Last name</h3><br>
-        <input type="text" name="entry.831306909" id="entry.831306909"><br>
-        <h3>Message</h3><br>
-        <input type="text" name="entry.1607601582" id="entry.1607601582"><br>
-        <input class="submit" type="submit" value="Submit">
-
-      </form>
-
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript">
-        var submitted=false;
-    </script>
-    <script type="text/javascript">
-
-        $('#gform').on('submit', function(e) {
-
-            $('#gform *').fadeOut(2000);
-            $('#gform').prepend('Thank you, your message has been sent!');
-        });
-
-        $('.submit').click(function() {
-            $('input[type="text"]').val('');
-            $('input[type="email"]').val('');
-        });
-    </script>
-
-</div>
 
 <!-- footer -->
-<div class="footer"></div>
 <footer> </footer>
 
-</div>
+
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

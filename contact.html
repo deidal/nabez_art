@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet"> -->
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"><link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+</head>
+<body>
+
+<!-- NAV BAR -->
+<!-- using bootstrap navbar -->
+<!-- #2A3A2D -->
+<nav class="navbar navbar-expand-lg navbar-light " style="background-color:#FAFAFA ; padding-top: 40px; padding-bottom: 30px" >
+    <a class="navbar-brand" href="index.html"><img src="https://svgshare.com/i/Qmn.svg" alt="" class="signature" style="height: 200px; padding-top: 20px "></a>
+    <button class="navbar-toggler" style="color: #E6DFCA" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" ></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="work.html">My Work</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+
+      </ul>
+    </div>
+  </nav>
+    <form name="gform" id="gform" enctype="text/plain" 
+    action="https://docs.google.com/forms/d/e/1FAIpQLSfNtOT1-3LxDpOb-ApZirsBevpYFW672Y3jeKnlDsmizoVuDQ/formResponse?" 
+    target="hidden_iframe" onsubmit="submitted=true;">
+        <h2 class="contact-me">Contact Me</h2>
+       <h3>Email</h2> <br>
+        <input type="email" name ="entry.1683424184" id="entry.1683424184"><br>
+        <h3>First name</h3><br>
+        <input type="text" name="entry.1242496308" id="entry.1242496308"><br>
+        <h3>Last name</h3><br>
+        <input type="text" name="entry.831306909" id="entry.831306909"><br>
+        <h3>Message</h3><br>
+        <input type="text" name="entry.1607601582" id="entry.1607601582"><br>
+        <input class="submit" type="submit" value="Submit">
+
+      </form>
+
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        var submitted=false;
+    </script>
+    <script type="text/javascript">
+        $('#gform').on('submit', function(e) {
+            $('#gform *').fadeOut(2000);
+            $('#gform').prepend('<div id="sent">Thank you, your message has been sent! </div> <br> <i class="icon-envelope"></i>');
+        });
+
+
+
+    </script>
+
+</body>
+</html>
